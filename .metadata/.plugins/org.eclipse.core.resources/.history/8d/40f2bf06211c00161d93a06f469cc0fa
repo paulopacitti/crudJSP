@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aula1 - Cadastro</title>
+	<script type="text/javascript" src="funcoes.js"> </script>
+</head>
+<body>
+	<a href="inclusao.html">Inclusao Aluno</a> &nbsp<a href="alteracao.html">Alteração Aluno</a> &nbsp<a href="exclusao.html">Exclusao Aluno</a>
+	<br>
+	 <a href="inclusaoCurso.html">Inclusão Curso</a> &nbsp<a href="alteracaoCurso.html">Alteração Curso</a> &nbsp<a href="exclusaoCurso.html">Exclusão Curso</a>
+
+
+	<center><h1>Alteração Aluno</h1></center>
+	<hr>
+	<br>
+	<br>
+
+	<form action="Alteracao">
+	RA: <input type="text" maxlength=5 name="ra" onkeypress='return isNumberKey(event)'> <br><br> 
+	Endereço: <input type="text" name="endereco"> &nbsp Cidade: <input type="text" maxlength=30 name="cidade"> &nbsp 
+	UF: <select>
+  			<option value="SP">SP</option>
+  			<option value="MG">MG</option>
+  			<option value="RJ">RJ</option>
+  			<option value="ES">ES</option>
+		</select> <br><br>
+
+	<h2>Curso</h2>
+	<hr>
+	Selecionar curso: <select name:"curso">
+  			<option value="1">PD</option>
+  			<option value="2">MEC</option>
+  			<option value="3">ELD</option>
+  			<option value="4">ENF</option>
+  			<option value="5">TA</option>
+		</select> <br><br>
+	<br>
+	<center>
+		<input type="submit" name="botao" value="Alterar">
+	</center>
+	</form>
+
+</body>
+</html>
