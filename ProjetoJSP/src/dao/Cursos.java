@@ -90,7 +90,7 @@ public class Cursos
        }
        catch (SQLException erro)
        {
-           throw new Exception ("Erro ao inserir curso");
+    	   erro.printStackTrace();       
        }
    	}
  

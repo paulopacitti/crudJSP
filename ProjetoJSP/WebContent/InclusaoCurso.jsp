@@ -63,6 +63,8 @@
            %>
                     <script>
                         alert("SQLException");
+                        e1.printStackTrace();
+                        e1.getMessage();
                     </script>
                 <%
                 }

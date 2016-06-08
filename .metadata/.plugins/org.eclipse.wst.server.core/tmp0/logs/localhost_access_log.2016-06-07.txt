@@ -1,0 +1,10 @@
+127.0.0.1 - - [07/Jun/2016:13:27:34 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:27:37 -0300] "GET /ProjetoJSP/inclusaoCurso.html HTTP/1.1" 200 865
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:27:37 -0300] "GET /ProjetoJSP/funcoes.js HTTP/1.1" 200 643
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:27:52 -0300] "GET /ProjetoJSP/InclusaoCurso.jsp?codCurso=6&nome=MeioAmbiente&botao=Incluir HTTP/1.1" 200 448
+127.0.0.1 - - [07/Jun/2016:13:30:49 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:30:59 -0300] "GET /ProjetoJSP/InclusaoCurso.jsp?codCurso=6&nome=MeioAmbiente&botao=Incluir HTTP/1.1" 500 22
+127.0.0.1 - - [07/Jun/2016:13:32:19 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:32:28 -0300] "GET /ProjetoJSP/InclusaoCurso.jsp?codCurso=6&nome=MeioAmbiente&botao=Incluir HTTP/1.1" 200 494
+127.0.0.1 - - [07/Jun/2016:13:33:23 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jun/2016:13:33:32 -0300] "GET /ProjetoJSP/InclusaoCurso.jsp?codCurso=6&nome=MeioAmbiente&botao=Incluir HTTP/1.1" 200 495

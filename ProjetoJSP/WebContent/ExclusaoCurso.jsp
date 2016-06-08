@@ -12,7 +12,7 @@
 
             <%!
                   // minhas vars privativas
-                  private static final long serialVersionUID = 1L;
+              private static final long serialVersionUID = 1L;
             %>
 
 
@@ -42,11 +42,11 @@
 		            "jdbc:sqlserver://regulus:1433;databasename=BDu14191",
 		            "BDu14191", "cotuca");
 			request.getSession().setAttribute("conexao", comando);
-
 			try
 			{
 				Cursos cursos = new Cursos(comando);
 				cursos.excluir(Integer.parseInt(codCurso));
+				System.out.println("==================================" + codCurso);
                 %>
 
                 <script>
@@ -60,9 +60,12 @@
 
            %>
                     <script>
-                        alert("SQLException");
+                        
+                    alert("SQLException");
+                        
                     </script>
                 <%
+                	e1.printStackTrace();
                 }
 
               }

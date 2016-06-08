@@ -30,7 +30,7 @@ public class Curso
 		if(novoCodCurso < 0)
 			throw new Exception("Ã�ndice negativo nÃ£o pode ser inserido");
 		else
-			this.codCurso = codCurso;
+			this.codCurso = novoCodCurso;
 	}
 	
 	public String getNome() 
@@ -43,7 +43,7 @@ public class Curso
 		if(novoNome.trim() == "")
 			throw new Exception("Nome nÃ£o pode ser nulo");
 		else
-			this.nome = nome;
+			this.nome = novoNome;
 	}
 	
 }
