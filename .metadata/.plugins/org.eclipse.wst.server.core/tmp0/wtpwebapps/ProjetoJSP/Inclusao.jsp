@@ -53,6 +53,7 @@
                           {
                             Alunos alunos = new
                             Alunos(comando); alunos.incluir(aluno);
+                            response.sendRedirect("sucesso.html");
                 %>
 
                 <script>
@@ -63,8 +64,9 @@
                           }
                 catch (Exception e1)
                 {
+                	response.sendRedirect("erro.html");
 
-           %>
+           		%>
                     <script>
                         alert("SQLException");
                     </script>
@@ -76,7 +78,7 @@
 
             catch(IOException e)
             {
-
+            	response.sendRedirect("erro.html");
             %>
                 <script>
                     alert("IO Exception");
@@ -86,6 +88,7 @@
                 }
               catch (ClassNotFoundException e1)
           		{
+            		response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");
@@ -94,6 +97,7 @@
               }
               catch (SQLException e1)
               {
+            		response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");

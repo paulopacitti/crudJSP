@@ -1,0 +1,21 @@
+.centro
+{
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-family: monospace;
+    color: #2c3e50;
+
+    vertical-align: middle;
+}
+
+.fonte
+{
+  font-family: monospace;
+  color: #2c3e50;
+  font-size: "18";
+}

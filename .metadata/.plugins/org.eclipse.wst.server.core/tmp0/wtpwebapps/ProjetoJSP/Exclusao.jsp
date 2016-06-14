@@ -23,9 +23,9 @@
 	try
 	{
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String codCurso = request.getParameter("codCurso");
+		String ra = request.getParameter("ra");
 
-		if(codCurso == "")
+		if(ra == "")
 		{
               %>
                 <script>
@@ -45,8 +45,9 @@
 
 			try
 			{
-				Cursos cursos = new Cursos(comando);
-				cursos.excluir(Integer.parseInt(codCurso));
+				Alunos alunos = new Alunos(comando);
+				alunos.excluir(ra);
+				response.sendRedirect("sucesso.html");
                 %>
 
                 <script>
@@ -57,6 +58,7 @@
             }
                 catch (Exception e1)
                 {
+                	response.sendRedirect("erro.html");
 
            %>
                     <script>
@@ -70,6 +72,7 @@
 
             catch(IOException e)
             {
+            	response.sendRedirect("erro.html");
 
             %>
                 <script>
@@ -80,6 +83,7 @@
                 }
               catch (ClassNotFoundException e1)
           		{
+            	  response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");
@@ -88,6 +92,7 @@
               }
               catch (SQLException e1)
               {
+            	  response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");

@@ -68,7 +68,7 @@ public class Cursos
 	}
 
 	public void incluir (Curso curso) throws Exception
-   {
+	{
        if (curso==null)
            throw new Exception ("Curso nao fornecido");
        if (cadastrado (curso.getCodCurso()))
@@ -92,7 +92,7 @@ public class Cursos
        {
     	   erro.printStackTrace();       
        }
-   	}
+   	 }
  
 	public void excluir (int codCurso) throws Exception
 	{
@@ -119,6 +119,7 @@ public class Cursos
            throw new Exception ("Erro ao excluir curso");
        }
 	}
+	
  
 	public void alterar (int codCurso, String nome) throws Exception
 	{

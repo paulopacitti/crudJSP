@@ -47,6 +47,7 @@
 				Cursos cursos = new Cursos(comando);
 				cursos.excluir(Integer.parseInt(codCurso));
 				System.out.println("==================================" + codCurso);
+				response.sendRedirect("sucesso.html");
                 %>
 
                 <script>
@@ -57,7 +58,8 @@
             }
                 catch (Exception e1)
                 {
-
+                	response.sendRedirect("erro.html");
+					
            %>
                     <script>
                         
@@ -73,6 +75,7 @@
 
             catch(IOException e)
             {
+            	response.sendRedirect("erro.html");
 
             %>
                 <script>
@@ -83,6 +86,7 @@
                 }
               catch (ClassNotFoundException e1)
           		{
+            	  response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");
@@ -91,6 +95,7 @@
               }
               catch (SQLException e1)
               {
+            	  response.sendRedirect("erro.html");
           %>
               <script>
                 alert("ClassNotFoundException");

@@ -26,7 +26,7 @@ public class Alunos
 	        {
 	            String sql;
 
-	            sql = "SELECT COUNT(*) AS QUANTOS FROM BDu14191.Aluno WHERE BDu14191.Aluno.nome = ?";
+	            sql = "SELECT COUNT(*) AS QUANTOS FROM BDu14191.Aluno WHERE BDu14191.Aluno.RA = ?";
 	            
 	            
 	            bd.prepareStatement (sql);
@@ -114,7 +114,7 @@ public class Alunos
 	        }
 	    }
 	  
-	  public void alterar (String ra, String endereco, String cidade, String uf, String curso) throws Exception
+	  public void alterar (String ra, String endereco, String cidade, String uf, int curso) throws Exception
 	    {
 	        if (ra==null)
 	            throw new Exception ("RA de aluno nao fornecido");
@@ -134,7 +134,7 @@ public class Alunos
 	            bd.setString (1, endereco);
 	            bd.setString (2, cidade);
 	            bd.setString (3, uf);
-	            bd.setString (4, curso);
+	            bd.setInt (4, curso);
 	            bd.setString (5, ra);
 
 	            bd.executeUpdate ();

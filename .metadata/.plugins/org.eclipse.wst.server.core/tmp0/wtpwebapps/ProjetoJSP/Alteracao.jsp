@@ -27,7 +27,7 @@
 		String endereco = request.getParameter("endereco");
 		String cidade = request.getParameter("cidade");
 		String UF = request.getParameter("UF");
-		String curso = request.getParameter("codCurso");
+		String curso = request.getParameter("curso");
 
 		if(ra == "" || endereco == "" || cidade =="" || UF == "" || curso =="")
 		{
@@ -50,7 +50,8 @@
 			try 
 			{
 				Alunos alunos = new Alunos(comando);
-				alunos.alterar(ra, endereco, cidade, UF, curso);
+				alunos.alterar(ra, endereco, cidade, UF, Integer.parseInt(curso));
+				response.sendRedirect("sucesso.html");
                 %>
 
                 <script>
@@ -61,7 +62,8 @@
             }
                 catch (Exception e1)
                 {
-
+                	response.sendRedirect("erro.html");
+                	e1.printStackTrace();
            %>
                     <script>
                         alert("SQLException");
@@ -74,7 +76,8 @@
 
             catch(IOException e)
             {
-
+            	response.sendRedirect("erro.html");
+            	e.printStackTrace();
             %>
                 <script>
                     alert("IO Exception");
@@ -84,6 +87,8 @@
                 }
               catch (ClassNotFoundException e1)
           		{
+            	  response.sendRedirect("erro.html");
+            	  e1.printStackTrace();
           %>
               <script>
                 alert("ClassNotFoundException");
@@ -92,6 +97,8 @@
               }
               catch (SQLException e1)
               {
+            	  response.sendRedirect("erro.html");
+            	  e1.printStackTrace();
           %>
               <script>
                 alert("ClassNotFoundException");

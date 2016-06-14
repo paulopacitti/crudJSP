@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aula1 - Cadastro</title>
+	<script type="text/javascript" src="funcoes.js"> </script>
+	<link rel="stylesheet" type="text/css" href="stilo.css" charset="utf-8">
+</head>
+<body>
+		<font class="fonte">
+	<a href="Inclusao.html">Inclusao Aluno</a> &nbsp<a href="Alteracao.html">Alteração Aluno</a> &nbsp<a href="Exclusao.html">Exclusao Aluno</a>
+	<br>
+	 <a href="inclusaoCurso.html">Inclusão Curso</a> &nbsp<a href="alteracaoCurso.html">Alteração Curso</a> &nbsp<a href="exclusaoCurso.html">Exclusão Curso</a>
+
+	<h1>Exclusão Aluno</h1>
+	<hr>
+	<br>
+	<br>
+
+	<form action="Exclusao">
+	RA: <input type="text" name="ra" onkeypress='return isNumberKey(event)'> <br><br> <br><br>
+</font>
+	<center>
+		<input type="submit" name="botao" value="Excluir">
+	</center>
+	</form>
+
+</body>
+</html>

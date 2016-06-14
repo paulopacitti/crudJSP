@@ -3,22 +3,24 @@
 	<meta charset="UTF-8">
 	<title>Aula1 - Cadastro</title>
 	<script type="text/javascript" src="funcoes.js"> </script>
+	<link rel="stylesheet" type="text/css" href="stilo.css" charset="utf-8">
 </head>
 <body>
-	<a href="inclusao.html">Inclusao Aluno</a> &nbsp<a href="alteracao.html">Alteração Aluno</a> &nbsp<a href="exclusao.html">Exclusao Aluno</a>
+	<font class="fonte">
+	<a href="Inclusao.html">Inclusao Aluno</a> &nbsp<a href="Alteracao.html">Alteração Aluno</a> &nbsp<a href="Exclusao.html">Exclusao Aluno</a>
 	<br>
 	 <a href="inclusaoCurso.html">Inclusão Curso</a> &nbsp<a href="alteracaoCurso.html">Alteração Curso</a> &nbsp<a href="exclusaoCurso.html">Exclusão Curso</a>
 
 
-	<center><h1>Alteração Aluno</h1></center>
+	<h1> Alteração Aluno</h1>
 	<hr>
 	<br>
 	<br>
 
 	<form action="Alteracao.jsp">
-	RA: <input type="text" maxlength=5 name="ra" onkeypress='return isNumberKey(event)'> <br><br> 
-	Endereço: <input type="text" name="endereco"> &nbsp Cidade: <input type="text" maxlength=30 name="cidade"> &nbsp 
-	UF: <select>
+	RA: <input type="text" maxlength=5 name="ra" onkeypress='return isNumberKey(event)'> <br><br>
+	Endereço: <input type="text" name="endereco"> &nbsp Cidade: <input type="text" maxlength=30 name="cidade"> &nbsp
+	UF: <select name="UF">
   			<option value="SP">SP</option>
   			<option value="MG">MG</option>
   			<option value="RJ">RJ</option>
@@ -27,7 +29,7 @@
 
 	<h2>Curso</h2>
 	<hr>
-	Selecionar curso: <select name:"curso">
+	Selecionar curso: <select name="curso">
   			<option value="1">PD</option>
   			<option value="2">MEC</option>
   			<option value="3">ELD</option>
@@ -35,6 +37,7 @@
   			<option value="5">TA</option>
 		</select> <br><br>
 	<br>
+</font>
 	<center>
 		<input type="submit" name="botao" value="Alterar">
 	</center>

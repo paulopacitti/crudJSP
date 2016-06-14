@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aula1 - Cadastro</title>
+	<script type="text/javascript" src="funcoes.js"> </script>
+	<link rel="stylesheet" type="text/css" href="stilo.css" charset="utf-8">
+</head>
+<body>
+	<font class="fonte">
+	<a href="Inclusao.html">Inclusao Aluno</a> &nbsp<a href="Alteracao.html">Alteração Aluno</a> &nbsp<a href="Exclusao.html">Exclusao Aluno</a>
+	<br>
+	 <a href="inclusaoCurso.html">Inclusão Curso</a> &nbsp<a href="alteracaoCurso.html">Alteração Curso</a> &nbsp<a href="exclusaoCurso.html">Exclusão Curso</a>
+
+
+	<h1>Cadastro Aluno</h1>
+	<hr>
+	<br>
+	<br>
+
+	<form action="Inclusao">
+
+	RA: <input type="text" name="ra" maxlength=5 onkeypress='return isNumberKey(event)'> Nome: <input type="text" name="nome" maxlength=30  onkeypress='return isLettersOnly(event)'> &nbsp Data de Nascimento: <input type="date" maxlength=10 name="dataNascimento"> <br> <br>
+	RG: <input type="text" name="RG" maxlength=9 onkeypress='return isNumberKey(event)'> &nbsp CPF: <input type="text" name="CPF" maxlength=11 onkeypress='return isNumberKey(event)'> <br><br>
+	Endereço: <input type="text" name="endereco">	Cidade: <input type="text" maxlength=30 name="cidade">
+	UF: <select name="UF">
+  			<option value="SP">SP</option>
+  			<option value="MG">MG</option>
+  			<option value="RJ">RJ</option>
+  			<option value="ES">ES</option>
+		</select> <br><br>
+
+	<h2>Curso</h2>
+	<hr>
+	Selecionar curso: <select name="curso">
+  			<option value="1">PD</option>
+  			<option value="2">MEC</option>
+  			<option value="3">ELD</option>
+  			<option value="4">ENF</option>
+  			<option value="5">TA</option>
+		</select> <br><br>
+	</fontt>
+	<br>
+	<center>
+		<input type="submit" name="botao" value="Incluir">
+	</center>
+	</form>
+
+</body>
+</html>
